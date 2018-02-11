@@ -1,0 +1,30 @@
+"""
+Description: Two players play optimally to win a game
+
+Example:
+464. Can I Win
+In the "100 game," two players take turns adding, to a running total, any integer from 1..10. The player who first causes the running total to reach or exceed 100 wins.
+What if we change the game so that players cannot re-use integers?
+
+486. Predict the Winner
+Given an array of scores that are non-negative integers. Player 1 picks one of the numbers from either end of the array followed by the player 2 and then player 1 and so on. Each time a player picks a number, that number will not be available for the next player. This continues until all the scores have been chosen. The player with the maximum score wins.
+Given an array of scores, predict whether player 1 is the winner. You can assume each player plays to maximize his score.
+
+Idea: 
+1. Assume current function returns if current player could win or not
+2. Recursion-  if any(not self.nextPlayer(potential movements)):  return True/current step
+	       else:    return False
+3. Keep visited state for efficiency
+
+Tricks:
+eg1: 292. Nim Game
+You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+
+The first one who got the number that is multiple of 4 (i.e. n % 4 == 0) will lost, otherwise he/she will win.
+
+public boolean canWinNim(int n) {    
+    return n % 4 != 0 ;
+}
+
+
+"""
