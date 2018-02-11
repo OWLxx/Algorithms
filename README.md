@@ -1,2 +1,2 @@
 # Leetcode
-For interview preparation. Categorized by type of questions
+Algorithm questions not limit to leetcode
