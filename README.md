@@ -1,2 +1,2 @@
-# Leetcode
-Algorithm questions not limited to leetcode
+# Algorithm with Leetcode
+Algorithm and questions
